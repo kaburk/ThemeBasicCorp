@@ -1,0 +1,6 @@
+﻿"id","name","value","created","modified"
+"1","site_name","My Site","2023-12-04 19:00:49",
+"2","site_url","https://example.com/","2023-12-04 19:00:49",
+"3","site_email","foo@example.com","2023-12-04 19:00:49",
+"4","site_tel",,"2023-12-04 19:00:49",
+"5","site_fax",,"2023-12-04 19:00:49",

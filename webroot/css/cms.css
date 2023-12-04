@@ -1,0 +1,595 @@
+/* CMS theme add
+-----------------------------------*/
+
+/* Slider
+----------------------------------------------- */
+.bx-wrapper {
+  border: none;
+}
+.bx-controls {
+  display: none;
+}
+
+/* Contents
+----------------------------------------------- */
+table {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bs-contents-list__item-title {
+  display: inline;
+}
+
+/* Form
+----------------------------------------------- */
+.required {
+  color: #FFF;
+  font-size: 10px;
+  background-color: #C30;
+  padding: 4px 5px;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  white-space: nowrap;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+label {
+  font-weight: normal;
+  display: inline;
+  margin-right: 10px;
+}
+label.title {
+  font-weight: bold;
+  display: block;
+  margin-right: 0px;
+}
+input {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Crumbs
+----------------------------------------------- */
+.breadcrumb ul li {
+  display: inline-block !important;
+}
+
+/* Pagination
+----------------------------------------------- */
+.bs-pagination {
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 100px;
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-size: 14px;
+}
+.bs-pagination a {
+  text-decoration: none;
+  color: #fff !important;
+  background-color: #001800;
+}
+.bs-pagination a:hover {
+  transition: all 300ms;
+  background-color: #555;
+}
+.bs-pagination__prev a, .bs-pagination__next a {
+  border: 1px solid #ddd;
+  display: block;
+  padding: 4px 20px;
+}
+.bs-pagination__prev.disabled, .bs-pagination__next.disabled {
+  border: 1px solid #ddd;
+  display: block;
+  padding: 4px 20px;
+  color: #DDD;
+}
+.bs-pagination__prev a, .bs-pagination__prev.disabled {
+  border-radius: 5px 0 0 5px;
+}
+.bs-pagination__next a, .bs-pagination__next.disabled {
+  border-radius: 0 5px 5px 0;
+}
+@media screen and (max-width: 768px) {
+  .bs-pagination__next a, .bs-pagination__next.disabled {
+    border-left: none;
+  }
+}
+.bs-pagination__number {
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .bs-pagination__number {
+    display: none;
+  }
+}
+.bs-pagination__number:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+.bs-pagination__number.current,
+.bs-pagination__number a {
+  display: inline-block;
+  padding: 4px 11px;
+}
+@media screen and (max-width: 768px) {
+  .bs-pagination__number.current,
+  .bs-pagination__number a {
+    display: none;
+  }
+}
+.bs-pagination__number.current {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+  font-weight: bold;
+}
+
+/**
+ * Blog
+ */
+/* Blog Title
+----------------------------------------------- */
+.bs-blog-category-title,
+.bs-blog-post-title {
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  padding: 0 !important;
+  background: none !important;
+  font-size: 24px !important;
+}
+/* Blog Post Title
+----------------------------------------------- */
+.bs-blog-post-title {
+  margin: 56px 0 5px 0 !important;
+}
+/* Blog Description
+----------------------------------------------- */
+.bs-blog-description {
+  margin-bottom: 60px;
+}
+/* Blog Post
+----------------------------------------------- */
+.bs-blog-post {
+  letter-spacing: 0.05rem;
+  line-height: 1.6;
+}
+.bs-blog-post__item {
+  border-bottom: 1px solid #ddd;
+  margin: 0 !important;
+  padding: 20px 0 20px !important;
+  list-style: none;
+  font-size: 14px;
+}
+.bs-blog-post__item::before {
+  content: none !important;
+}
+.bs-blog-post__item a {
+  transition: all 300ms;
+  text-decoration: none;
+}
+.bs-blog-post__item a:link, .bs-blog-post__item a:visited {
+  color: #000 !important;
+}
+.bs-blog-post__item a:hover {
+  color: #555 !important;
+}
+.bs-blog-post__item-eye-catch {
+  transition: all 300ms;
+  float: left;
+  display: block;
+  margin-right: 20px !important;
+}
+.bs-blog-post__item-eye-catch:hover {
+  opacity: 0.7;
+}
+.bs-blog-post__item-title {
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  display: block;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 1.6 !important;
+  font-weight: bold;
+}
+.bs-blog-post__item-category {
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-size: 10px;
+  border: 1px solid #000;
+  padding: 2px 5px;
+  border-radius: 10px;
+  white-space: nowrap;
+  display: inline;
+}
+.bs-blog-post__item-date {
+  margin: 0 !important;
+  padding-right: 10px;
+  font-size: 13px;
+  letter-spacing: 0;
+  color: #a0a2a8;
+  font-style: italic;
+  font-family: YakuHanJP, "Barlow", "Noto Sans JP", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .bs-blog-post__item-date {
+    margin-bottom: 6px !important;
+  }
+}
+/* Blog Single Post
+----------------------------------------------- */
+.bs-single-post {
+  margin-bottom: 80px;
+}
+.bs-single-post__meta {
+  text-align: right;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .bs-single-post__meta {
+    margin-bottom: 40px;
+    padding-right: 10px;
+  }
+}
+.bs-single-post__meta a {
+  transition: all 300ms;
+  text-decoration: none;
+}
+.bs-single-post__meta a:link, .bs-single-post__meta a:visited {
+  color: #000 !important;
+}
+.bs-single-post__meta a:hover {
+  color: #555 !important;
+}
+.bs-single-post__meta-category {
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-size: 10px;
+  border: 1px solid #000;
+  padding: 2px 5px;
+  border-radius: 10px;
+  white-space: nowrap;
+  display: inline;
+}
+.bs-single-post__meta-date {
+  margin: 0 0 0 10px !important;
+  padding-right: 10px;
+  font-size: 13px;
+  letter-spacing: 0;
+  color: #a0a2a8;
+  font-style: italic;
+  font-family: YakuHanJP, "Barlow", "Noto Sans JP", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .bs-single-post__meta-date {
+    padding-left: 10px;
+  }
+}
+.bs-single-post__eye-catch img {
+  transition: all 300ms;
+  display: block;
+  width: 100%;
+  margin-bottom: 40px !important;
+}
+.bs-single-post__eye-catch img:hover {
+  opacity: 0.7;
+}
+/* Blog Contents Navigation
+----------------------------------------------- */
+.bs-blog-contents-navi {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 160px 0 0 0;
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-size: 14px;
+}
+.bs-blog-contents-navi a {
+  transition: all 300ms;
+  width: 47%;
+  display: block;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .bs-blog-contents-navi a {
+    font-size: 12px;
+  }
+}
+.bs-blog-contents-navi a:link, .bs-blog-contents-navi a:visited {
+  color: #000 !important;
+}
+.bs-blog-contents-navi a:hover {
+  color: #555 !important;
+}
+.bs-blog-contents-navi .next-link {
+  padding: 20px 0 20px 2%;
+  float: right;
+  text-align: left;
+}
+.bs-blog-contents-navi .prev-link {
+  padding: 20px 2% 20px 0;
+  float: left;
+  text-align: right;
+}
+/* Related Posts
+----------------------------------------------- */
+.bs-blog-related-posts {
+  margin-top: 160px;
+}
+/* Blog Comment
+----------------------------------------------- */
+.bs-blog-comment {
+  margin-top: 160px;
+}
+.bs-blog-comment__head {
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+.bs-blog-comment__list {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.bs-blog-comment__list-item {
+  padding: 40px 0;
+  margin: 0 40px;
+  border-bottom: 1px #CCC dotted;
+}
+.bs-blog-comment__list-item:first-child {
+  padding-top: 20px;
+}
+.bs-blog-comment__list-item-name {
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.bs-blog-comment__list-item-name a:visited,
+.bs-blog-comment__list-item-name a:visited {
+  color: #000 !important;
+}
+.bs-blog-comment__auth-captcha input {
+  display: block;
+}
+.bs-blog-comment__submit {
+  text-align: center;
+  padding: 20px 0;
+}
+/* Blog Comment Add Form
+----------------------------------------------- */
+#BlogCommentAddForm .required {
+  color: #FFF;
+  font-size: 10px;
+  background-color: #C30;
+  padding: 4px 5px;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  white-space: nowrap;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+#BlogCommentAddForm .normal {
+  color: #FFF;
+  font-size: 10px;
+  background-color: #CCC;
+  padding: 4px 5px;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  white-space: nowrap;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+#BlogCommentAddForm .button {
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 10px;
+  padding: 8px 40px;
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap;
+  line-height: 24px;
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  text-decoration: none !important;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  background-image: -ms-linear-gradient(top, #fff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+  background-image: linear-gradient(top, #fff, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+#BlogCommentAddForm .button:hover {
+  color: #333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  transition: background-position 0.1s linear;
+}
+#BlogCommentAddForm .button:active {
+  color: #333;
+  border: 1px solid #CCC;
+  text-decoration: none;
+  background: #cdcdcd;
+  background: -moz-linear-gradient(top, #cdcdcd, #eee 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#cdcdcd), color-stop(100%, #eee));
+  background: -o-linear-gradient(top, #cdcdcd, #eee 100%);
+}
+
+/**
+ * Mail Form
+ */
+/* Mail Title Sub
+----------------------------------------------- */
+.bs-mail-title-sub {
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  padding: 0 !important;
+  background: none !important;
+  font-size: 24px !important;
+}
+/* Mail Form
+----------------------------------------------- */
+.bs-mail-form .form-error {
+  background-color: #FCF5EB;
+}
+.bs-mail-form .error-message {
+  color: #C30;
+  font-weight: bold;
+  font-size: small;
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  padding: 5px;
+}
+.bs-mail-form .error-message:before {
+  content: "※";
+}
+/* Mail Form Body
+----------------------------------------------- */
+.bs-mail-form-body {
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+.bs-mail-form-body input[type=password],
+.bs-mail-form-body input[type=text],
+.bs-mail-form-body input[type=email],
+.bs-mail-form-body input[type=tel],
+.bs-mail-form-body input[type=number],
+.bs-mail-form-body textarea {
+  box-sizing: border-box;
+  width: 100% !important;
+}
+.bs-mail-form-body .required {
+  color: #FFF;
+  font-size: 10px;
+  background-color: #C30;
+  padding: 4px 5px;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  white-space: nowrap;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.bs-mail-form-body .normal {
+  color: #FFF;
+  font-size: 10px;
+  background-color: #CCC;
+  padding: 4px 5px;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  white-space: nowrap;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.bs-mail-form-auth-captcha .auth-captcha-image {
+  vertical-align: middle;
+}
+/* Mail Form Submit
+----------------------------------------------- */
+.bs-mail-form-submit {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bs-mail-form-submit input[type=submit],
+.bs-mail-form-submit input[type=reset] {
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 10px;
+  padding: 8px 40px;
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap;
+  line-height: 24px;
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  text-decoration: none !important;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  background-image: -ms-linear-gradient(top, #fff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+  background-image: linear-gradient(top, #fff, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+.bs-mail-form-submit input[type=submit]:hover,
+.bs-mail-form-submit input[type=reset]:hover {
+  color: #333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  transition: background-position 0.1s linear;
+}
+.bs-mail-form-submit input[type=submit]:active,
+.bs-mail-form-submit input[type=reset]:active {
+  color: #333;
+  border: 1px solid #CCC;
+  text-decoration: none;
+  background: #cdcdcd;
+  background: -moz-linear-gradient(top, #cdcdcd, #eee 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#cdcdcd), color-stop(100%, #eee));
+  background: -o-linear-gradient(top, #cdcdcd, #eee 100%);
+}
+@media screen and (max-width: 768px) {
+  .bs-mail-form-submit input[type=submit],
+  .bs-mail-form-submit input[type=reset] {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+/* Message
+----------------------------------------------- */
+#flashMessage,
+#ResultMessage {
+  font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  padding: 10px 20px;
+  margin: 20px auto 40px !important;
+  color: #fff;
+  background-color: #0897d0;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#flashMessage.alert-message {
+  color: #fff;
+  background-color: #f06671;
+}
+#flashMessage.warning-message {
+  color: #fff;
+  background-color: #e4f9c1;
+}
+#flashMessage.info-message {
+  color: #fff;
+  background-color: #0897d0;
+}
+/* Error Messages
+----------------------------------------------- */
+.error-message:has(.error-message):before {
+  content: "";
+}
+.error-message:has(.error-message) .error-message {
+  padding: 0 0 0 15px;
+  margin: 0;
+}
+.error-message:has(.error-message) .error-message:before {
+  background: none;
+  top: auto;
+}
