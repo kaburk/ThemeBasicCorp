@@ -1,0 +1,29 @@
+name: Release Plugin ZIP
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: プラグインディレクトリをZIP化
+        run: |
+          zip -r ThemeBasicCorp.zip . \
+              -x ".git/*" \
+              -x ".github/*" \
+              -x "*.zip"
+
+      - name: リリースにZIPをアップロード
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ThemeBasicCorp.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
