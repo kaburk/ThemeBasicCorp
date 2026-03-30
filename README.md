@@ -15,8 +15,8 @@
 {baserCMS設置フォルダ}/plugins/
 になります。
 
-githubなどからzip形式でダウンロードして解凍した場合に ThemeBasicCorp-masterなどフォルダ名が ThemeBasicCorp になっていない場合はリネームしてから設置して下さい。
-
+https://github.com/kaburk/ThemeBasicCorp/releases からダウンロードするとOKですが、
+zip形式でダウンロードして解凍した場合に ThemeBasicCorp-mainなどフォルダ名が ThemeBasicCorp になっていない場合はリネームしてから設置して下さい。
 ThemeBasicCorp/plugins/フォルダ内にBannerプラグインを設置してからテーマを有効化すると、Bannerプラグインも有効化されて、初期データ読込でバナーのデータも作成します。
 
 
